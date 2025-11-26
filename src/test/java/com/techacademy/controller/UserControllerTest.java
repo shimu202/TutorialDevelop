@@ -82,7 +82,17 @@ class UserControllerTest {
   assertEquals(1, user1.getId());
   assertEquals("キラメキ太郎", user1.getName());
   
+  User user2=user.get(1);
+  assertEquals(2, user2.getId());
+  assertEquals("キラメキ次郎", user2.getName());
   
+  User user3=user.get(2);
+  assertEquals(3,user3.getId());
+  assertEquals("キラメキ花子", user3.getName());
+  
+ 
+ assertEquals(3, user.size());
+ 
     }
     
     

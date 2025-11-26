@@ -56,7 +56,8 @@ public class UserController {
     	
     /**User更新画面を表示*/
     @GetMapping("/update/{id}/")
-    public String getUser(@PathVariable("id") Integer id, @ModelAttribute("user") User user, Model model) {
+    public String getUser(@PathVariable("id") Integer id, 
+ User user, Model model) {
     	//Modelに登録
     	if(id !=null) {
     		model.addAttribute("user", service.getUser(id));	
