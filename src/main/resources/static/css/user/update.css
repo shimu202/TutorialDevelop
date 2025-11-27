@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
 label{
-	display: inline-black;
+	display: inline-block;
 	width: 8em;
 	line-hight: 150%
+}
+
+.err{
+	color:red;
 }
